@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const parser = new PublicGoogleSheetsParser();
   const data = await parser.parse(spreadsheetId);
-  console.log(data);
   renderLibros(data);
 
   // fetch("./js/libros.json")
@@ -84,18 +83,24 @@ const botonWhatsapp = document.getElementById('link-whatsapp');
 
 // Añadir listener al botón
 botonWhatsapp.addEventListener('click', (e) => {
-  // e.preventDefault();
+  e.preventDefault();
   // Obtener los datos de articulosCarrito
   let mensaje = '';
   mensaje = "*Buenas estoy interesado en los siguiente libros:* \%0A"
-  articulosCarrito.forEach(articulo => {
-    mensaje += encodeURIComponent(articulo.titulo);
-    mensaje += "%0A"
-  });
+  if(articulosCarrito.length){
+    console.log("Hay items")
+    articulosCarrito.forEach(articulo => {
+      mensaje += encodeURIComponent(articulo.titulo);
+      mensaje += "%0A"
+    });
+  } else {    
+    mensaje = "*Buenas estoy interesado en comprar sus libros* \%0A"
+    console.log("No hay items")
+  }
+ 
   // Crear enlace de WhatsApp con los datos
-  const url = `https://wa.me/987654321?text=${(mensaje)}`;  
+  const url = `https://wa.me/923882948?text=${(mensaje)}`;  
   
-  console.log(url)
   // Abrir enlace en nueva pestaña
   window.open(url);
 
