@@ -76,8 +76,6 @@ function leerDatosCurso(curso) {
       articulosCarrito = [...articulosCarrito, infoLibro];
   }
 
-  console.log(articulosCarrito)
-
 }
 
 
