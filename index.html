@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/public-google-sheets-parser@latest"></script>
+</head>
+
+<body class="mx-10 my-4">
+    <h1>Libreria</h1>
+
+    <ul id="lista-libros" class="grid grid-cols-3 gap-4">
+
+    </ul>
+
+    <template id="libro-template">
+        <li class="bg-sky-100 p-4">
+            <strong>Título:</strong> <span class="titulo"></span><br>
+            <strong>Autor:</strong> <span class="autor"></span><br>
+            <strong>Género:</strong> <span class="genero"></span><br>
+            <strong>Publicación:</strong> <span class="publicacion"></span><br>
+        </li>
+    </template>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>

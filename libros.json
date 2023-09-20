@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "titulo": "El Principito",
+      "autor": "Antoine de Saint-Exupéry",
+      "genero": "Ficción",
+      "publicacion": 1943
+    },
+    {
+      "id": 2,
+      "titulo": "Cien años de soledad",
+      "autor": "Gabriel García Márquez",
+      "genero": "Realismo mágico",
+      "publicacion": 1967
+    },
+    {
+      "id": 3,
+      "titulo": "Moby Dick",
+      "autor": "Herman Melville",
+      "genero": "Aventura",
+      "publicacion": 1851
+    }
+  ]
+  
