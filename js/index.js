@@ -99,7 +99,7 @@ botonWhatsapp.addEventListener('click', (e) => {
   }
  
   // Crear enlace de WhatsApp con los datos
-  const url = `https://wa.me/923882948?text=${(mensaje)}`;  
+  const url = `https://wa.me/949411194?text=${(mensaje)}`;  
   
   // Abrir enlace en nueva pestaña
   window.open(url);
