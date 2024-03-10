@@ -25,6 +25,9 @@ function renderLibros(data) {
     libroDiv.querySelector(".libro").dataset.id = libro.id;
     libroDiv.querySelector(".titulo").textContent = libro.titulo;
     libroDiv.querySelector(".autor").textContent = libro.autor;
+    libroDiv.querySelector(".paginas").textContent = libro.paginas;
+    libroDiv.querySelector(".papel").textContent = libro.papel;
+    libroDiv.querySelector(".precio").textContent = libro.precio;
     // libroDiv.querySelector(".precio").textContent = libro.precio;
     // libroDiv.querySelector("img").src = `${RUTA_IMAGENES}/${libro.imagen}`;
     libroDiv.querySelector("img").src = `${libro.imagen}`;

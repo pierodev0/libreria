@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Catalogo de libros</title>
+    <title>EDICIONES DODI</title>
+    <link rel="icon" href="/src/favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/public-google-sheets-parser@latest"></script>
 
 </head>
@@ -15,8 +16,8 @@
         <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 fixed top-0 right-0 h-[60px] w-full z-10">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                 <a href="#" class="flex items-center">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">EDICIONES DODI 2024</span>
+                    <img src="./src/EDICIONES-DODI.png" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">EDICIONES DODI</span>
                 </a>
                 <div class="flex items-center lg:order-2">
                     
@@ -71,11 +72,15 @@
             <div class="h-[250px] flex justify-center">
                 <img class="object-contain rounded-lg"/>
             </div>
-            <div class="flex flex-col items-center p-2 gap-1">
-                <p class="titulo text- font-bold line-clamp-2 min-h-[50px] uppercase text-center"> El Juego de
+            <div class="flex flex-col p-2 gap-1">
+                <p class="autor text-gray-500  text-sm line-clamp-2 text-center">George R.R. Martin</p>
+                <p class="titulo text-blue-600 font-bold line-clamp-2 min-h-[50px] uppercase text-center"> El Juego de
                     Tronos </p>
-                <p class="autor text-blue-600 font-bold text-sm line-clamp-2 text-center min-h-[40px]">George R.R. Martin</p>
-                <!-- <p class="precio text-2xl text-green-700 font-bold min-h-[40px]"></p> -->
+                <div class="flex justify-center gap-7">
+                    <p class="inline-block">Pag: <span class="paginas">124</span></p>
+                    <p class="inline-block">Papel: <span class="papel">Avena</span></p>
+                </div>
+                <p class="font-bold text-2xl text-center mt-2 mb-2">S/ <span class="precio">100</span></p>
                 <button id="boton-libro" class="bg-green-500 hover:bg-green-700 w-full p-2 rounded-full text-white font-bold uppercase">Agregar</button>
             </div>
         </div>
